@@ -9,7 +9,7 @@
       "registry_name": "rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_firing/recipes/rail_burn.json"
+          "src/main/resources/data/rail_smelting/recipes/rail_burn.json"
         ]
       }
     },
@@ -22,7 +22,7 @@
       "registry_name": "detector_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_firing/recipes/detector_rail_burn.json"
+          "src/main/resources/data/rail_smelting/recipes/detector_rail_burn.json"
         ]
       }
     },
@@ -35,7 +35,7 @@
       "registry_name": "activator_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_firing/recipes/activator_rail_burn.json"
+          "src/main/resources/data/rail_smelting/recipes/activator_rail_burn.json"
         ]
       }
     },
@@ -48,7 +48,7 @@
       "registry_name": "powered_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_firing/recipes/powered_rail_burn.json"
+          "src/main/resources/data/rail_smelting/recipes/powered_rail_burn.json"
         ]
       }
     }
