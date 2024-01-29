@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "group": "rail_burn",
   "category": "misc",
-  "experience": 1,
+  "experience": 3,
   "cookingtime": 50,
   "ingredient": {
     "item": "minecraft:detector_rail"
