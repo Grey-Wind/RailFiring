@@ -63,12 +63,12 @@
     "children": []
   },
   "workspaceSettings": {
-    "modid": "rail_firing",
-    "modName": "Rail Firing",
+    "modid": "rail_smelting",
+    "modName": "Rail Smelting",
     "version": "1.0.0",
-    "description": "A modpack that add some recipes about the rail firing.",
+    "description": "A modpack that add some recipes about the rail smelting.",
     "author": "Grey Wind",
-    "websiteURL": "https://github.com/Grey-Wind/RailFiring",
+    "websiteURL": "https://github.com/Grey-Wind/RailSmelting",
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -77,8 +77,8 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.4",
-    "credits": "https://github.com/Grey-Wind/RailFiring",
-    "modElementsPackage": "net.greywind.railfiring",
+    "credits": "https://github.com/Grey-Wind/RailSmelting",
+    "modElementsPackage": "net.greywind.railsmelting",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202300336712

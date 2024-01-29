@@ -3,15 +3,15 @@ loaderVersion="[45,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
-modId="rail_firing"
+modId="rail_smelting"
 version="1.0.0"
-displayName="Rail Firing"
-credits="https://github.com/Grey-Wind/RailFiring"
-displayURL="https://github.com/Grey-Wind/RailFiring"
+displayName="Rail Smelting"
+credits="https://github.com/Grey-Wind/RailSmelting"
+displayURL="https://github.com/Grey-Wind/RailSmelting"
 authors="Grey Wind"
-description="A modpack that add some recipes about the rail firing."
+description="A modpack that add some recipes about the rail smelting."
 
-[[dependencies.rail_firing]]
+[[dependencies.rail_smelting]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.4]"

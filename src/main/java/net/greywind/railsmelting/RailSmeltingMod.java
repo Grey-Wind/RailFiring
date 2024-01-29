@@ -11,7 +11,7 @@
  *    will be REGENERATED on each build.
  *
  */
-package net.greywind.railfiring;
+package net.greywind.railsmelting;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -38,12 +38,12 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("rail_firing")
-public class RailFiringMod {
-	public static final Logger LOGGER = LogManager.getLogger(RailFiringMod.class);
-	public static final String MODID = "rail_firing";
+@Mod("rail_smelting")
+public class RailSmeltingMod {
+	public static final Logger LOGGER = LogManager.getLogger(RailSmeltingMod.class);
+	public static final String MODID = "rail_smelting";
 
-	public RailFiringMod() {
+	public RailSmeltingMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
