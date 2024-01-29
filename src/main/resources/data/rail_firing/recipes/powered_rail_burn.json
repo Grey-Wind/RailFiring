@@ -1,6 +1,7 @@
 {
-  "group": "rail_burn",
   "type": "minecraft:smelting",
+  "group": "rail_burn",
+  "category": "misc",
   "experience": 1,
   "cookingtime": 60,
   "ingredient": {

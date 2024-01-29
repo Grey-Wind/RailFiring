@@ -76,8 +76,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "currentGenerator": "forge-1.19.4",
+    "credits": "https://github.com/Grey-Wind/RailFiring",
     "modElementsPackage": "net.greywind.railfiring",
     "lockBaseModFiles": false
   },

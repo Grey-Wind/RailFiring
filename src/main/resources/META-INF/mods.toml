@@ -1,12 +1,12 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[45,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="rail_firing"
 version="1.0.0"
 displayName="Rail Firing"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="https://github.com/Grey-Wind/RailFiring"
 displayURL="https://github.com/Grey-Wind/RailFiring"
 authors="Grey Wind"
 description="A modpack that add some recipes about the rail firing."
@@ -14,7 +14,7 @@ description="A modpack that add some recipes about the rail firing."
 [[dependencies.rail_firing]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.4]"
     ordering="NONE"
     side="BOTH"
 
