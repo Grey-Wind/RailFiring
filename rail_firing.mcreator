@@ -66,9 +66,10 @@
     "modid": "rail_firing",
     "modName": "Rail Firing",
     "version": "1.0.0",
-    "author": "19534, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "description": "A modpack that add some recipes about the rail firing.",
+    "author": "Grey Wind",
+    "websiteURL": "https://github.com/Grey-Wind/RailFiring",
+    "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -76,7 +77,8 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
-    "modElementsPackage": "net.qingyi.railfiring",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.greywind.railfiring",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202300336712
