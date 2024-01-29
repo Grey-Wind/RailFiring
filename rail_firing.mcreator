@@ -1,0 +1,83 @@
+{
+  "mod_elements": [
+    {
+      "name": "RailBurn",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_firing/recipes/rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "DetectorRailBurn",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detector_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_firing/recipes/detector_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "ActivatorRailBurn",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activator_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_firing/recipes/activator_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "PoweredRailBurn",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powered_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_firing/recipes/powered_rail_burn.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "rail_firing",
+    "modName": "Rail Firing",
+    "version": "1.0.0",
+    "author": "19534, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.qingyi.railfiring",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

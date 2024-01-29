@@ -1,0 +1,43 @@
+{
+  "mod_elements": [
+    {
+      "name": "RailBurn",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_firing/recipes/rail_burn.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "rail_firing",
+    "modName": "Rail Firing",
+    "version": "1.0.0",
+    "author": "19534, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.qingyi.railfiring",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

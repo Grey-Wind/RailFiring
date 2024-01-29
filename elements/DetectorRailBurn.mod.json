@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "rail_burn",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 50,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.DETECTOR_RAIL"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "name": "detector_rail_burn",
+    "namespace": "mod"
+  }
+}
