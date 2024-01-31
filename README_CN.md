@@ -1,8 +1,8 @@
-# Rail Smelting
+# 烧炼铁轨
 
-A Minecraft mod that add some recipes about the rail smelting.
+一个*Minecraft*模组添加了一些有关铁轨烧炼的配方。
 
-Rails -> Furnace -> Ingot
+铁轨 -> 熔炉 -> 金属锭
 
 ![rail-burn](./README.assets/rail-burn.png)
 
