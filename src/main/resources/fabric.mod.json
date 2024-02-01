@@ -23,9 +23,10 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.14.9",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
-    "minecraft": "~1.19",
-    "java": ">=17"
-  }
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "accessWidener": "modid.accesswidener"
 }

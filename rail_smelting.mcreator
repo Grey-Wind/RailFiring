@@ -1,15 +1,15 @@
 {
   "mod_elements": [
     {
-      "name": "RailBurn",
+      "name": "ActivatorRailBurn",
       "type": "recipe",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rail_burn",
+      "registry_name": "activator_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_smelting/recipes/rail_burn.json"
+          "src/main/resources/data/rail_smelting/recipes/activator_rail_burn.json"
         ]
       }
     },
@@ -27,28 +27,28 @@
       }
     },
     {
-      "name": "ActivatorRailBurn",
-      "type": "recipe",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "activator_rail_burn",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/rail_smelting/recipes/activator_rail_burn.json"
-        ]
-      }
-    },
-    {
       "name": "PoweredRailBurn",
       "type": "recipe",
-      "sortid": 4,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "powered_rail_burn",
       "metadata": {
         "files": [
           "src/main/resources/data/rail_smelting/recipes/powered_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "RailBurn",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/rail_burn.json"
         ]
       }
     }
@@ -77,7 +77,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "fabric-1.19.1",
+    "currentGenerator": "fabric-1.17.1",
     "credits": "https://github.com/Grey-Wind/RailSmelting",
     "modElementsPackage": "net.greywind.railsmelting",
     "lockBaseModFiles": false
