@@ -1,11 +1,12 @@
 {
-  "type": "minecraft:smelting",
   "group": "rail_burn",
-  "category": "misc",
+  "type": "minecraft:smelting",
   "experience": 3,
   "cookingtime": 50,
   "ingredient": {
     "item": "minecraft:detector_rail"
   },
-  "result": "minecraft:iron_ingot"
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
 }

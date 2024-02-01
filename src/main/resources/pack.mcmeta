@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": "A modpack that add some recipes about the rail smelting."
+    "description": "rail_smelting mod resources",
+    "pack_format": 6
   }
 }
