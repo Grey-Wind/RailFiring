@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:detector_rail"
   },
-  "result": "minecraft:iron_ingot"
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
 }
