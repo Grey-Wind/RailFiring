@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'fabric-loom' version '0.12-SNAPSHOT'
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -8,21 +8,14 @@ targetCompatibility = JavaVersion.VERSION_17
 archivesBaseName = 'modid'
 version = '1.0.0'
 group = 'com.yourname.modid'
-actualmodid = 'rail_smelting'
-
-loom {
-    mixin {
-        defaultRefmapName = actualmodid + ".refmap.json"
-    }
-}
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.19.2"
+    minecraft "com.mojang:minecraft:1.19.1"
     mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:0.14.19"
+    modImplementation "net.fabricmc:fabric-loader:0.14.8"
 
     //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.67.1+1.19.2"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.58.4+1.19.1"
 }
 
 processResources {
@@ -50,11 +43,3 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 jar {
     from "LICENSE"
 }
-
-loom {
-	mixin {
-		defaultRefmapName = actualmodid + ".refmap.json"
-	}
-}
-
-apply from: 'mcreator.gradle'
