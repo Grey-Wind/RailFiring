@@ -1,12 +1,12 @@
 bobView:false
 fboEnable:true
-lastServer:localhost:25463
-renderDistance:14
+lastServer:localhost:25464
+renderDistance:12
 fancyGraphics:true
 entityShadows:true
-enableVsync:false
-maxFps:260
+enableVsync:true
+maxFps:140
 particles:0
 renderClouds:false
 ao:0
-mipmapLevels:4
+mipmapLevels:2
