@@ -77,7 +77,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.1",
     "credits": "https://github.com/Grey-Wind/RailSmelting",
     "modElementsPackage": "net.greywind.railsmelting",
     "lockBaseModFiles": false
