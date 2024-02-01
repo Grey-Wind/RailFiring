@@ -1,21 +1,21 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[28,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="rail_smelting"
 version="1.1.1"
 displayName="Rail Smelting"
-credits="https://github.com/Grey-Wind/RailSmelting"
 displayURL="https://github.com/Grey-Wind/RailSmelting"
 logoFile="logo.png"
+credits="https://github.com/Grey-Wind/RailSmelting"
 authors="Grey Wind"
-description='''A modpack that add some recipes about the rail smelting.'''
+description="A modpack that add some recipes about the rail smelting."
 
 [[dependencies.rail_smelting]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[1.14.4]"
     ordering="NONE"
     side="BOTH"
 

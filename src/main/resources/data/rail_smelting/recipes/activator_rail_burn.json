@@ -6,7 +6,5 @@
   "ingredient": {
     "item": "minecraft:activator_rail"
   },
-  "result": {
-    "item": "minecraft:iron_ingot"
-  }
+  "result": "minecraft:iron_ingot"
 }
