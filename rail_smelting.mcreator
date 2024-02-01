@@ -9,7 +9,7 @@
       "registry_name": "rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_smelting/recipes/rail_burn.json"
+          "src/main/java/net/greywind/railsmelting/item/crafting/RecipeRailBurn.java"
         ]
       }
     },
@@ -22,7 +22,7 @@
       "registry_name": "detector_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_smelting/recipes/detector_rail_burn.json"
+          "src/main/java/net/greywind/railsmelting/item/crafting/RecipeDetectorRailBurn.java"
         ]
       }
     },
@@ -35,7 +35,7 @@
       "registry_name": "activator_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_smelting/recipes/activator_rail_burn.json"
+          "src/main/java/net/greywind/railsmelting/item/crafting/RecipeActivatorRailBurn.java"
         ]
       }
     },
@@ -48,7 +48,7 @@
       "registry_name": "powered_rail_burn",
       "metadata": {
         "files": [
-          "src/main/resources/data/rail_smelting/recipes/powered_rail_burn.json"
+          "src/main/java/net/greywind/railsmelting/item/crafting/RecipePoweredRailBurn.java"
         ]
       }
     }
@@ -77,7 +77,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.14.4",
+    "currentGenerator": "forge-1.12.2",
     "credits": "https://github.com/Grey-Wind/RailSmelting",
     "modElementsPackage": "net.greywind.railsmelting",
     "lockBaseModFiles": false
