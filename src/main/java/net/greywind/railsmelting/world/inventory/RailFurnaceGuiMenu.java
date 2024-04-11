@@ -1,20 +1,28 @@
 
 package net.greywind.railsmelting.world.inventory;
 
-import net.greywind.railsmelting.RailSmeltingMod;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.Container;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.greywind.railsmelting.init.RailSmeltingModMenus;
+
+import java.util.HashMap;
 
 public class RailFurnaceGuiMenu extends AbstractContainerMenu {
-
 	public final static HashMap<String, Object> guistate = new HashMap<>();
-
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
-
 	private BlockPos pos;
-
 	private final Container inventory;
-
 	private boolean bound = false;
 
 	public RailFurnaceGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
@@ -29,15 +37,11 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu {
 
 	public RailFurnaceGuiMenu(int id, Inventory inv, Container container) {
 		super(RailSmeltingModMenus.RAIL_FURNACE_GUI, id);
-
 		this.entity = inv.player;
 		this.world = inv.player.level();
-
 		this.inventory = container;
-
 		this.addSlot(new Slot(inventory, 0, 41, 12) {
 			private final int slot = 0;
-
 		});
 		this.addSlot(new Slot(inventory, 1, 113, 12) {
 			private final int slot = 1;
@@ -47,14 +51,11 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu {
 				return false;
 			}
 		});
-
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -44 + 84 + si * 18));
-
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -44 + 142));
-
 	}
 
 	@Override
@@ -69,7 +70,6 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu {
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-
 			if (index < 2) {
 				if (!this.moveItemStackTo(itemstack1, 2, this.slots.size(), true))
 					return ItemStack.EMPTY;
@@ -84,7 +84,6 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu {
 				}
 				return ItemStack.EMPTY;
 			}
-
 			if (itemstack1.isEmpty())
 				slot.set(ItemStack.EMPTY);
 			else
@@ -99,10 +98,8 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu {
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-
 	}
 
 	public static void screenInit() {
 	}
-
 }

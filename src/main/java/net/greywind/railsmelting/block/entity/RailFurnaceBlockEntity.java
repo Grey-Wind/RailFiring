@@ -2,8 +2,30 @@ package net.greywind.railsmelting.block.entity;
 
 import org.jetbrains.annotations.Nullable;
 
-public class RailFurnaceBlockEntity extends RandomizableContainerBlockEntity implements ExtendedScreenHandlerFactory, WorldlyContainer {
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.WorldlyContainer;
+import net.minecraft.world.ContainerHelper;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.NonNullList;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
+import net.greywind.railsmelting.world.inventory.RailFurnaceGuiMenu;
+import net.greywind.railsmelting.init.RailSmeltingModBlockEntities;
+
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+
+import java.util.stream.IntStream;
+
+public class RailFurnaceBlockEntity extends RandomizableContainerBlockEntity implements ExtendedScreenHandlerFactory, WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
 
 	public RailFurnaceBlockEntity(BlockPos position, BlockState state) {
@@ -13,10 +35,8 @@ public class RailFurnaceBlockEntity extends RandomizableContainerBlockEntity imp
 	@Override
 	public void load(CompoundTag compound) {
 		super.load(compound);
-
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-
 		ContainerHelper.loadAllItems(compound, this.stacks);
 	}
 
@@ -104,5 +124,4 @@ public class RailFurnaceBlockEntity extends RandomizableContainerBlockEntity imp
 	public void writeScreenOpeningData(ServerPlayer player, FriendlyByteBuf buf) {
 		buf.writeBlockPos(worldPosition);
 	}
-
 }

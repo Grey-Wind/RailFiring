@@ -1,6 +1,20 @@
 package net.greywind.railsmelting.procedures;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.core.BlockPos;
+
+import java.util.function.Supplier;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
 
 public class RailFurnaceGuiWhenOpenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
