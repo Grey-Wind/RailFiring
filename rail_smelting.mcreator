@@ -69,6 +69,51 @@
         ]
       },
       "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceGuiWhenOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_gui_when_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/greywind/railsmelting/procedures/RailFurnaceGuiWhenOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/greywind/railsmelting/world/inventory/RailFurnaceGuiMenu.java",
+          "src/main/java/net/greywind/railsmelting/client/gui/RailFurnaceGuiScreen.java"
+        ]
+      },
+      "path": "~/RailFurnace"
     }
   ],
   "variable_elements": [],

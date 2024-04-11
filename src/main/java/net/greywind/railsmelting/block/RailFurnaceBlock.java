@@ -4,6 +4,7 @@ package net.greywind.railsmelting.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -13,11 +14,21 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.greywind.railsmelting.world.inventory.RailFurnaceGuiMenu;
 import net.greywind.railsmelting.block.entity.RailFurnaceBlockEntity;
+
+import io.netty.buffer.Unpooled;
 
 public class RailFurnaceBlock extends Block implements EntityBlock {
 	public RailFurnaceBlock() {
@@ -43,6 +54,25 @@ public class RailFurnaceBlock extends Block implements EntityBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.or(box(0, 0, 0, 16, 1, 16), box(1, 1, 1, 15, 2, 15), box(2, 5, 2, 14, 6, 14), box(1, 6, 2, 2, 8, 14), box(14, 6, 2, 15, 8, 14), box(2, 6, 1, 14, 8, 2), box(2, 6, 14, 14, 8, 15), box(0, 1, 0, 2, 11, 2), box(0, 1, 14, 2, 11, 16),
 				box(14, 1, 14, 16, 11, 16), box(14, 1, 0, 16, 11, 2), box(3, 2, 3, 7, 3, 5), box(3, 2, 5, 6, 3, 7), box(9, 2, 1, 12, 3, 3), box(9, 2, -1, 13, 3, 1), box(0, 2, 11, 2, 3, 14), box(2, 2, 11, 4, 3, 15), box(1, 10, 1, 15, 12, 15));
+	}
+
+	@Override
+	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+		super.use(blockstate, world, pos, entity, hand, hit);
+		if (entity instanceof ServerPlayer player) {
+			player.openMenu(new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("Rail Furnace");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new RailFurnaceGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+				}
+			}, pos);
+		}
+		return InteractionResult.SUCCESS;
 	}
 
 	@Override
