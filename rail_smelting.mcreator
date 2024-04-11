@@ -51,16 +51,42 @@
           "src/main/resources/data/rail_smelting/recipes/powered_rail_burn.json"
         ]
       }
+    },
+    {
+      "name": "RailFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rail_smelting/models/item/rail_furnace.json",
+          "src/main/java/net/greywind/railsmelting/block/RailFurnaceBlock.java",
+          "src/main/resources/data/rail_smelting/loot_tables/blocks/rail_furnace.json",
+          "src/main/resources/assets/rail_smelting/blockstates/rail_furnace.json",
+          "src/main/resources/assets/rail_smelting/models/block/rail_furnace.json",
+          "src/main/java/net/greywind/railsmelting/block/entity/RailFurnaceBlockEntity.java"
+        ]
+      },
+      "path": "~/RailFurnace"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
+  "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.rail_smelting.rail_furnace": "Rail Furnace"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "RailFurnace",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "rail_smelting",
@@ -70,17 +96,15 @@
     "author": "Grey Wind",
     "websiteURL": "https://github.com/Grey-Wind/RailSmelting",
     "license": "GNU General Public License version 3 (GPLv3)",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "icon-s",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.20.1",
+    "currentGenerator": "neoforge-1.20.4",
     "credits": "https://github.com/Grey-Wind/RailSmelting",
-    "modElementsPackage": "net.greywind.railsmelting",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.greywind.railsmelting"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400115713
 }

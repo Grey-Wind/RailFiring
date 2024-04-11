@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "rail_burn",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "minecraft:activator_rail"
+  },
+  "result": "minecraft:iron_ingot"
+}

@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bottom1",
+        "1": "bottom2",
+        "2": "top",
+        "3": "coal",
+        "4": "side",
+        "5": "center"
+      },
+      "name": "default"
+    }
+  }
+}

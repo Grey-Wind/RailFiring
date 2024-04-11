@@ -1,0 +1,14 @@
+{
+  "parent": "rail_smelting:custom/railfurnace",
+  "textures": {
+    "all": "rail_smelting:block/center",
+    "particle": "rail_smelting:block/center",
+    "0": "rail_smelting:block/bottom1",
+    "1": "rail_smelting:block/bottom2",
+    "2": "rail_smelting:block/top",
+    "3": "rail_smelting:block/coal",
+    "4": "rail_smelting:block/side",
+    "5": "rail_smelting:block/center"
+  },
+  "render_type": "solid"
+}
