@@ -121,14 +121,52 @@
         ]
       },
       "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceSynthesis",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/rail_furnace_synthesis.json"
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailSmeltingCreativeTab",
+      "type": "tab",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_smelting_creative_tab",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
+    "zh_hk": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "鐵軌熔爐"
+    },
+    "zh_tw": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "鐵軌熔爐"
+    },
     "en_us": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
       "block.rail_smelting.rail_furnace": "Rail Furnace"
+    },
+    "zh_cn": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "铁轨熔炉"
     }
   },
   "foldersRoot": {
