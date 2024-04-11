@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "rail_burn",
+    "cookingBookCategory": "MISC",
+    "xpReward": 3.0,
+    "cookingTime": 60,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.GOLDEN_RAIL"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.GOLD_INGOT"
+    },
+    "name": "powered_rail_burn",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "mod_elements": [
+    {
+      "name": "RailBurn",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "DetectorRailBurn",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detector_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/detector_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "ActivatorRailBurn",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activator_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/activator_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "PoweredRailBurn",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powered_rail_burn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/powered_rail_burn.json"
+        ]
+      }
+    },
+    {
+      "name": "RailFurnace",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rail_smelting/models/item/rail_furnace.json",
+          "src/main/java/net/greywind/railsmelting/block/RailFurnaceBlock.java",
+          "src/main/resources/assets/rail_smelting/blockstates/rail_furnace.json",
+          "src/main/resources/assets/rail_smelting/models/block/rail_furnace.json",
+          "src/main/java/net/greywind/railsmelting/block/entity/RailFurnaceBlockEntity.java"
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceGuiWhenOpen",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_gui_when_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/greywind/railsmelting/procedures/RailFurnaceGuiWhenOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceGui",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/greywind/railsmelting/world/inventory/RailFurnaceGuiMenu.java",
+          "src/main/java/net/greywind/railsmelting/client/gui/RailFurnaceGuiScreen.java"
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailFurnaceSynthesis",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_furnace_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rail_smelting/recipes/rail_furnace_synthesis.json"
+        ]
+      },
+      "path": "~/RailFurnace"
+    },
+    {
+      "name": "RailSmeltingCreativeTab",
+      "type": "tab",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_smelting_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SellRail",
+      "type": "villagertrade",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_rail",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Villager"
+    },
+    {
+      "name": "BuyRail",
+      "type": "villagertrade",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_rail",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Villager"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "zh_hk": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "鐵軌熔爐"
+    },
+    "zh_tw": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "鐵軌熔爐"
+    },
+    "en_us": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "Rail Furnace"
+    },
+    "zh_cn": {
+      "item_group.rail_smelting.rail_smelting_creative_tab": "Rail Smelting",
+      "block.rail_smelting.rail_furnace": "铁轨熔炉"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "RailFurnace",
+        "children": []
+      },
+      {
+        "name": "Villager",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rail_smelting",
+    "modName": "Rail Smelting",
+    "version": "1.3.0",
+    "description": "A modpack that add some recipes about the rail smelting.",
+    "author": "Grey Wind",
+    "websiteURL": "https://github.com/Grey-Wind/RailSmelting",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "serverSideOnly": false,
+    "modPicture": "icon-s",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "https://github.com/Grey-Wind/RailSmelting",
+    "modElementsPackage": "net.greywind.railsmelting"
+  },
+  "mcreatorVersion": 202400115713
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rail_smelting:block/rail_furnace"
+    }
+  }
+}

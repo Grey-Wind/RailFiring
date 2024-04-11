@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "rail_smelting",
+  "version": "1.3.0",
+  "name": "Rail Smelting",
+  "description": "A modpack that add some recipes about the rail smelting.",
+  "authors": [
+    "Grey Wind"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Grey-Wind/RailSmelting",
+    "sources": ""
+  },
+  "license": "GNU General Public License version 3 (GPLv3)",
+  "icon": "assets/rail_smelting/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.greywind.railsmelting.RailSmeltingMod"
+    ],
+    "client": [
+      "net.greywind.railsmelting.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "rail_smelting.mixins.json"
+  ]
+}

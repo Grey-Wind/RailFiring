@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_block"
+    },
+    "b": {
+      "item": "minecraft:polished_blackstone_slab"
+    },
+    "c": {
+      "item": "minecraft:gold_block"
+    },
+    "d": {
+      "item": "minecraft:lava_bucket"
+    },
+    "e": {
+      "item": "minecraft:polished_blackstone"
+    }
+  },
+  "result": {
+    "item": "rail_smelting:rail_furnace",
+    "count": 1
+  }
+}
