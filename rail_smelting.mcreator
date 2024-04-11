@@ -158,6 +158,18 @@
         "files": []
       },
       "path": "~/Villager"
+    },
+    {
+      "name": "BuyRail",
+      "type": "villagertrade",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_rail",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Villager"
     }
   ],
   "variable_elements": [],
