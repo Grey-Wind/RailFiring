@@ -146,6 +146,18 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "SellRail",
+      "type": "villagertrade",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_rail",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Villager"
     }
   ],
   "variable_elements": [],
@@ -174,6 +186,10 @@
     "children": [
       {
         "name": "RailFurnace",
+        "children": []
+      },
+      {
+        "name": "Villager",
         "children": []
       }
     ]
