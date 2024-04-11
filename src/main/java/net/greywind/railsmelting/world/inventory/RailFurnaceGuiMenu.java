@@ -4,7 +4,10 @@ package net.greywind.railsmelting.world.inventory;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.event.TickEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
@@ -26,6 +29,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class RailFurnaceGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -99,7 +103,6 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu implements Supplie
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -44 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -44 + 142));
-		RailFurnaceGuiWhenOpenProcedure.execute(world, x, y, z);
 	}
 
 	@Override
@@ -227,5 +230,17 @@ public class RailFurnaceGuiMenu extends AbstractContainerMenu implements Supplie
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof RailFurnaceGuiMenu) {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			RailFurnaceGuiWhenOpenProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

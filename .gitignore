@@ -17,6 +17,11 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
+# Run
+run/saves/
+run/logs/
+runs/
+
 #MCreator
 \workspaceBackups
 *.zip

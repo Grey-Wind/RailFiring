@@ -41,7 +41,7 @@
         }
       }
     ],
-    "onOpen": {
+    "onTick": {
       "name": "RailFurnaceGuiWhenOpen"
     },
     "gridSettings": {

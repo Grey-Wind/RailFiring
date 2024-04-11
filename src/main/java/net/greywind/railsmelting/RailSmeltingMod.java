@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.greywind.railsmelting.init.RailSmeltingModTabs;
 import net.greywind.railsmelting.init.RailSmeltingModMenus;
 import net.greywind.railsmelting.init.RailSmeltingModItems;
 import net.greywind.railsmelting.init.RailSmeltingModBlocks;
@@ -42,6 +43,8 @@ public class RailSmeltingMod {
 		RailSmeltingModBlocks.REGISTRY.register(modEventBus);
 		RailSmeltingModBlockEntities.REGISTRY.register(modEventBus);
 		RailSmeltingModItems.register(modEventBus);
+
+		RailSmeltingModTabs.REGISTRY.register(modEventBus);
 
 		RailSmeltingModMenus.REGISTRY.register(modEventBus);
 

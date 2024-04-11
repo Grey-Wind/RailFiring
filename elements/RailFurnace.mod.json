@@ -195,7 +195,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MATERIALS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
